@@ -1,0 +1,202 @@
+/* Global font */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header style */
+header {
+    background: linear-gradient(90deg, #4CAF50, #2e7d32);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #4CAF50;
+}
+
+/* Main content */
+main {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #4CAF50, #2e7d32);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.3) rotate(10deg);
+}
+
+/* Form Styling */
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 12px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    filter: brightness(70%);
+    /*border-bottom: 5px solid #4CAF50;*/
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.hero-text p {
+    font-size: 1.3em;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+/* Project Gallery */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.project-gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
